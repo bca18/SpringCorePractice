@@ -1,0 +1,53 @@
+SPRING CORE TUTORIAL:
+
+Softwares:
+1) Eclipse/Netbeans/IntelliJ
+2) TomcatServer
+3) MySQL for Database
+4) MySQL Workbench (GUI any)
+
+---------------------------------------------------------------------------------------------------
+
+Basics:
+1) Create a maven project
+2) Add dependencies -> spring core, spring context (from online maven repo to pom.xml)
+3) creating beans - java pojo (plain old java object)
+4) creating configuration file -> config.xml
+5) setter Injection
+6) Main class: which can pull the object and use
+
+---------------------------------------------------------------------------------------------------
+
+DEPENDENCY INJECTION TYPES:
+Primitive Types:
+<property name="">
+    <value>value</value>
+</property>
+
+<property name="" value="" />
+
+<bean class="" name="" p:propertyname="" />
+
+Collection Types:
+
+List, Set
+<bean>
+    <property name="">
+        <list> (name according to collection used)
+	    <value>10</value>
+            <value>100</value>
+            ...
+	</list>
+    </property>
+</bean>
+
+Map
+<bean>
+    <property name="">
+        <map> (name according to collection used)
+	    <entry key="java" value="2month" />
+	    <entry key="python" value="1month" />
+            ...
+	</map>
+    </property>
+</bean>
