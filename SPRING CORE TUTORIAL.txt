@@ -26,7 +26,7 @@ Primitive Types:
 
 <property name="" value="" />
 
-<bean class="" name="" p:propertyname="" />
+<bean class="" name="" p:propertyname="" /> (P Schema)
 
 Collection Types:
 
@@ -36,6 +36,7 @@ List, Set
         <list> (name according to collection used)
 	    <value>10</value>
             <value>100</value>
+	    <null/> (for null values)
             ...
 	</list>
     </property>
@@ -49,5 +50,15 @@ Map
 	    <entry key="python" value="1month" />
             ...
 	</map>
+    </property>
+</bean>
+
+Properties
+<bean>
+    <property name="">
+	<props>
+	    <prop key="name">Bharateesh</prop>
+	    <prop key="channelName">Bharateesh Ananth</prop>
+	</props>
     </property>
 </bean>
