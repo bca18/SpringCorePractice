@@ -1,0 +1,23 @@
+package com.springcore.ci;
+
+import java.security.cert.Certificate;
+
+public class Person {
+	private String name;
+	private int personId;
+	private Cert certi;
+	
+	public Person(String name, int personId, Cert cert) {
+		this.name = name;
+		this.personId = personId;
+		certi = cert;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.name+" : "+this.personId + "{" + this.certi.name + "}";
+	}
+	
+	
+}

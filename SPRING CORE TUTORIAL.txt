@@ -62,3 +62,33 @@ Properties
 	</props>
     </property>
 </bean>
+
+Reference Type:
+A
+Reference Inject:
+B
+
+<bean>
+    <property name="a">
+	<ref bean="b" />
+    </property>
+</bean>
+
+---------------------------------------------------------------------------------------------------
+Constructor Injection:
+
+<bean class="com.springcore.ci.Person" id="p1">
+    	<constructor-arg>
+    		<value>Bharateesh</value>
+    	</constructor-arg>
+</bean>
+
+<bean class="com.springcore.ci.Person" id="p1">
+    	<constructor-arg value="bharateesh" />
+    	<constructor-arg value="018" />
+</bean>
+
+c-schema:
+<bean class="com.springcore.ci.Cert" name="cert" c:name="Python Language" />
+
+---------------------------------------------------------------------------------------------------
