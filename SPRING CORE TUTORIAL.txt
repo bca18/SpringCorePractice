@@ -100,4 +100,20 @@ Constructor Injection - Ambiguity Problem Fix:
 </bean>
 
 ---------------------------------------------------------------------------------------------------
+Bean Life-Cycle Methods:
+it has basically init() and destroy() methods given to a bean.
+Tested it accordingly by xml, interfaces or annotations
+object creation(Bean) -> init -> access bean methods -> destroy
+Eg:
 
+xml config:
+<bean class="com.springcore.lifecycle.Samosa" id="s1" init-method="init" destroy-method="destroy">
+    	<property name="price" value="15" />
+</bean>
+in Main:
+AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/lifecycle/config.xml");
+context.registerShutdownHook();
+
+Using Interfaces:
+InitializingBean(init), DisposableBean(destroy)
+Remember Bean Initializing and destroction order accordingly.
