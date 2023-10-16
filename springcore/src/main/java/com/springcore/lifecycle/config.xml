@@ -5,15 +5,21 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
-    http://www.springframework.org/schema/context/spring-context.xsd">  
+    http://www.springframework.org/schema/context/spring-context.xsd">
     
-    <!--  this is our bean -->
+    <context:annotation-config></context:annotation-config>  
+    
+    <!--  this is our bean
     <bean class="com.springcore.lifecycle.Samosa" id="s1" init-method="init" destroy-method="destroy">
     	<property name="price" value="15" />
     </bean>
     
     <bean class="com.springcore.lifecycle.Pepsi" id="p1">
     	<property name="price" value="20" />
+    </bean>
+    -->
+    <bean class="com.springcore.lifecycle.Example" id="e1">
+    	<property name="subject" value="Chemistry" />
     </bean>
     
  </beans>

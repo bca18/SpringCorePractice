@@ -112,8 +112,13 @@ xml config:
 </bean>
 in Main:
 AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/lifecycle/config.xml");
-context.registerShutdownHook();
+context.registerShutdownHook(); (Required to catch destroy method results)
 
 Using Interfaces:
-InitializingBean(init), DisposableBean(destroy)
+InitializingBean(init), DisposableBean(destroy) (implement in bean class)
 Remember Bean Initializing and destroction order accordingly.
+
+Using Annotations:
+@PostConstruct and @PreDestroy annotations used. (Deprecated after Java9, import as a dependency in pom.xml)
+Enable annotation in config file using: <context:annotation-config></context:annotation-config> 
+---------------------------------------------------------------------------------------------------
