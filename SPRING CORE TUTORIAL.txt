@@ -122,3 +122,14 @@ Using Annotations:
 @PostConstruct and @PreDestroy annotations used. (Deprecated after Java9, import as a dependency in pom.xml)
 Enable annotation in config file using: <context:annotation-config></context:annotation-config> 
 ---------------------------------------------------------------------------------------------------
+Autowiring: To automatically do dependency injection of object references.
+
+XML:
+First create referring class, by basic property or constructor injection.
+Next create calling class, then add autowire property in the tag adding one of the modes based on requirements:
+byName, byType, coinstructor (other: default,no)
+
+Annotations:
+Here we can use below annotations:
+@Autowired
+@Qualifier("bean name/id")
