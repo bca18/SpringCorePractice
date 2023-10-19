@@ -133,3 +133,27 @@ Annotations:
 Here we can use below annotations:
 @Autowired
 @Qualifier("bean name/id")
+
+---------------------------------------------------------------------------------------------------
+Standalone Collections:
+
+We can specify what type of collection we want using util schema. In xml add these tags:
+xmlns:util="http://www.springframework.org/schema/util"
+http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd
+    "(at end)
+
+and make a tag outside any bean for collection u want:
+<util:list list-class="java.util.LinkedList" id="mybestfriends">
+    	<value>Rakshith</value>
+    	<value>Pavan</value>
+    	<value>Shashidhar</value>
+</util:list>
+
+and call the above using ref tag in xml:
+<bean class="com.springcore.standalone.collections.Person" name="p1">
+    	<property name="friends">
+    		<ref bean="mybestfriends" />
+    	</property>
+</bean>
+
