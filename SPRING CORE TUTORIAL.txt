@@ -171,3 +171,17 @@ to add values, use @Value("") annotation above the declaration of variables.
 @Value("") for collections:
 - Make a standalone collection in xml as discussed earlier.
 - @Value("#{ADD YOUR COLLECTION's REF ID/NAME}")
+
+---------------------------------------------------------------------------------------------------
+Bean Scope:
+
+Singleton:
+use hashCode() for object in main function. We observer it gives same hashcode for same two objects, it's called as a singleton scope - default mode is singleton.
+We can configure bean scope either using xml file or annotation.
+In xml, we add scope="" attribute in bean tag.
+In annotation, we use @Component along with @Scope("") before the class definition.
+Prototype:
+Opposite of latter.
+Request:for web
+Session:for web
+globalsession:for web, for portlet applications
