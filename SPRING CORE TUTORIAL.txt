@@ -157,3 +157,17 @@ and call the above using ref tag in xml:
     	</property>
 </bean>
 
+---------------------------------------------------------------------------------------------------
+Stereotype Annotations:
+To create <bean></bean> without xml using annotations way.
+
+@Component & @Component(""): Default-camelcase classname object, if set-your object name
+in xml add:
+<context:component-scan base package=""/>
+and use the above annotation on called class
+
+to add values, use @Value("") annotation above the declaration of variables.
+
+@Value("") for collections:
+- Make a standalone collection in xml as discussed earlier.
+- @Value("#{ADD YOUR COLLECTION's REF ID/NAME}")
