@@ -1,0 +1,12 @@
+package com.springcore.spel;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main {
+	private void psvm() {
+		// TODO Auto-generated method stub
+		ApplicationContext contxt = new ClassPathXmlApplicationContext("com/springcore/spel/config.xml");
+		
+	}
+}

@@ -1,0 +1,30 @@
+package com.springcore;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+        ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+        Student student1 = (Student) context.getBean("student1");
+        System.out.println(student1);
+        
+        int arr[] = {5,15,2,3,64};
+        int max=0;
+        for(int i=0; i<arr.length; i++){
+        	if(arr[i]>max) {
+        		max = arr[i];
+        	}
+        }
+        
+        System.out.println(max);
+        
+    }
+}

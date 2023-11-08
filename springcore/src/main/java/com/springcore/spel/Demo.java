@@ -7,8 +7,38 @@ import org.springframework.stereotype.Component;
 public class Demo {
 	@Value("#{22+11}")
 	private int x;
+	
 	@Value("#{18+21}")
 	private int y;
+	
+	@Value("#{T(java.lang.Math).sqrt(4)}")
+	private double z;
+	
+	@Value("#{T(com.springcore.spel.Variable).x}")
+	private int val;
+	
+	//object example:
+	@Value("#{new String('Bharateesh') }")
+	private String name;
+	
+	public double getZ() {
+		return z;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getVal() {
+		return val;
+	}
+	public void setVal(int val) {
+		this.val = val;
+	}
+	public void setZ(double z) {
+		this.z = z;
+	}
 	public int getX() {
 		return x;
 	}
@@ -23,7 +53,7 @@ public class Demo {
 	}
 	@Override
 	public String toString() {
-		return "Demo [x=" + x + ", y=" + y + "]";
+		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", val=" + val + ", name=" + name + "]";
 	}
 	
 	

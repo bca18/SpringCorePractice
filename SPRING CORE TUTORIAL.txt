@@ -175,13 +175,25 @@ to add values, use @Value("") annotation above the declaration of variables.
 ---------------------------------------------------------------------------------------------------
 Bean Scope:
 
-Singleton:
-use hashCode() for object in main function. We observer it gives same hashcode for same two objects, it's called as a singleton scope - default mode is singleton.
+- Singleton:
+use hashCode() for object in main function. We observe it gives same hashcode for same two objects, it's called as a singleton scope - default mode is singleton.
 We can configure bean scope either using xml file or annotation.
 In xml, we add scope="" attribute in bean tag.
 In annotation, we use @Component along with @Scope("") before the class definition.
-Prototype:
+- Prototype:
 Opposite of latter.
 Request:for web
 Session:for web
 globalsession:for web, for portlet applications
+
+---------------------------------------------------------------------------------------------------
+Spring Expression Language (SpEL):
+- For Parsing and executing annotations with @Value annotation.
+- format: @Value("# {ANY EXPRESSION HERE}") - Expression Passables: Class, Variables, Methods, Symbols, Objects, static methods etc. It will resolve.
+- Examples: @Value("#{11+22}")
+	    @Value("#{8>6?true:false}")
+- Examples for invoking class methods & Variables: T(class).method(param)
+			Example: T(java.lang.Math).sqrt(4)
+			Example: T(java.lang.Integer).Max_Value -> for variables
+- Examples for  creating objects: new Object(value) (for constructors)
+			Example: @Value({new String('BCA')})
