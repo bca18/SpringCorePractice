@@ -197,3 +197,6 @@ Spring Expression Language (SpEL):
 			Example: T(java.lang.Integer).Max_Value -> for variables
 - Examples for  creating objects: new Object(value) (for constructors)
 			Example: @Value({new String('BCA')})
+- Example for boolean type: @Value("#{8>3}")
+			    private boolean exp;
+- Standalone Collections is discussed previously.

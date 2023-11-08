@@ -21,7 +21,7 @@ public class Demo {
 	@Value("#{new String('Bharateesh') }")
 	private String name;
 	
-	@Value("#{8>3}")
+	@Value("{8>3}")
 	private boolean exp;
 	
 	public double getZ() {
@@ -31,7 +31,8 @@ public class Demo {
 		return name;
 	}
 	public void setName(String name) {
-	} 
+		this.name = name;
+	}
 	public int getVal() {
 		return val;
 	}

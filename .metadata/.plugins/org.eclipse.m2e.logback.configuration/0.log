@@ -1285,3 +1285,23 @@
 2023-11-08 23:22:09,038 [Worker-39: Launching Main (8)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SpringCorePractice\springcore\src\main\resources
 2023-11-08 23:22:09,040 [Worker-39: Launching Main (8)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-11-08 23:22:09,042 [Worker-39: Launching Main (8)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SpringCorePractice\springcore\src\test\resources
+2023-11-08 23:28:38,274 [Worker-49: Launching Main (8)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-08 23:28:38,274 [Worker-49: Launching Main (8)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SpringCorePractice\springcore\src\main\resources
+2023-11-08 23:28:38,275 [Worker-49: Launching Main (8)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-08 23:28:38,276 [Worker-49: Launching Main (8)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SpringCorePractice\springcore\src\test\resources
+2023-11-08 23:29:40,796 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-08 23:29:40,796 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SpringCorePractice\springcore\src\main\resources
+2023-11-08 23:29:40,796 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-08 23:29:40,796 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SpringCorePractice\springcore\src\test\resources
+2023-11-08 23:30:20,524 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-08 23:30:20,524 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SpringCorePractice\springcore\src\main\resources
+2023-11-08 23:30:20,525 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-08 23:30:20,525 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SpringCorePractice\springcore\src\test\resources
+2023-11-08 23:30:36,156 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-08 23:30:36,156 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SpringCorePractice\springcore\src\main\resources
+2023-11-08 23:30:36,158 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-08 23:30:36,158 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SpringCorePractice\springcore\src\test\resources
+2023-11-08 23:32:08,552 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-08 23:32:08,552 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SpringCorePractice\springcore\src\main\resources
+2023-11-08 23:32:08,553 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-08 23:32:08,553 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\SpringCorePractice\springcore\src\test\resources
