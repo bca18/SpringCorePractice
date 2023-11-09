@@ -1,0 +1,6 @@
+package com.springcore.javaconfig;
+
+@Component
+public class Student {
+
+}

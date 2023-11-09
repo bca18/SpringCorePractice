@@ -200,3 +200,15 @@ Spring Expression Language (SpEL):
 - Example for boolean type: @Value("#{8>3}")
 			    private boolean exp;
 - Standalone Collections is discussed previously.
+
+---------------------------------------------------------------------------------------------------
+No Configuration XML File Spring Core (Annotation Based Configuration):
+- Create a configuration class in java and add @Configuration annotation
+- Also add @ComponentScan(basePackages="") annotation (As we did in xml adding base package)
+- In main function: ApplicationContext context = new AnnotationConfigApplicationContext(JavaConfig.class); understand this.
+- We can even remove Bean based annotation (@Component) from the dependant class:
+  - Simply in java config file create a method, add @Bean annotation above it and instantiate the object of depandant class and return that object. 
+  - In main do this: Student s  = (Student)   context.getBean("getStudent", Student.class);, menthion method name in getBean.
+- When we use @Bean annotation, we dont need/use @ComponentScan annotation.It can be removed too.
+- use @Bean to create ref dependencies too and pass ref to constructor of class calling in javaconfig file.
+- @Bean(name = {"student", "demo", "s", "temp"}), all are id/name of bean as an array. Any can be used in Main.
